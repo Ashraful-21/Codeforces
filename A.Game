@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,middle;
+    cin>>n;
+    int a[n];
+
+
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    //sort the arrray
+    sort(a,a+n);
+//1st person delete the max value and another person erase minimum, so middle one is the answer.
+    if(n%2==0)
+    {
+             middle=a[n/2-1];
+
+    }
+    else
+    {
+     middle=a[n/2];
+
+    }
+
+    cout<<middle<<'\n';
+
+ return 0;
+}
