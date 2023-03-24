@@ -4,6 +4,7 @@ int main()
 {
    int n;
    cin>>n;
+   
    int first;
    int second;
    int third;
